@@ -1,7 +1,22 @@
 import React from "react";
 import { render } from "react-dom";
-import { App } from "./component/app/App";
+import { BrowserRouter } from "react-router-dom";
+
+import { App } from "./component/app";
+import GlobalStyle from "./utils/global";
+import { ThemeProvider } from "styled-components";
+import theme from "./utils/theme";
 
 const HereIsReact = document.querySelector("#here-is-react");
 
-render(<App />, HereIsReact);
+render(
+  <BrowserRouter>
+    <ThemeProvider theme={theme}>
+      <>
+        <App />
+        <GlobalStyle></GlobalStyle>
+      </>
+    </ThemeProvider>
+  </BrowserRouter>,
+  HereIsReact
+);
