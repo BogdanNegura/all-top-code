@@ -6,7 +6,7 @@ import {
   StyledMainNavigationWrapper,
 } from "./navigation.style";
 import { Logo } from "../logo";
-import { DarkMode } from "../dark-mode/dark-mode.component";
+// import { DarkMode } from "../dark-mode/dark-mode.component";
 
 const Navigation = () => {
   return (
@@ -15,7 +15,7 @@ const Navigation = () => {
         <StyledNavigationWrapper>
           <Logo />
           <NavigationList />
-          <DarkMode />
+          {/* <DarkMode /> */}
         </StyledNavigationWrapper>
       </StyledContainer>
     </StyledMainNavigationWrapper>

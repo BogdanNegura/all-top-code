@@ -5,16 +5,20 @@ import { FiUser } from "react-icons/fi";
 
 import { StyledNavigationListUl } from "./navigation-list.style";
 
-const NavigationList = () => {
+const NavigationList = ({ mobile, clicked }) => {
   return (
     <div>
       <StyledNavigationListUl>
-        <NavigationItem link="/">
+        <NavigationItem link="/" mobile={mobile} clicked={clicked}>
           <AiFillHome size="1.8rem" color="blue" />
         </NavigationItem>
-        <NavigationItem link="/story">Story</NavigationItem>
-        <NavigationItem link="/cv">CV</NavigationItem>
-        <NavigationItem link="/sign-in">
+        <NavigationItem link="/story" mobile={mobile} clicked={clicked}>
+          Story
+        </NavigationItem>
+        <NavigationItem link="/cv" mobile={mobile} clicked={clicked}>
+          CV
+        </NavigationItem>
+        <NavigationItem link="/sign-in" mobile={mobile} clicked={clicked}>
           <FiUser />
         </NavigationItem>
       </StyledNavigationListUl>

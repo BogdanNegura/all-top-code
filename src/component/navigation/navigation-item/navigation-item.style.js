@@ -16,7 +16,7 @@ export const StyledNavigationLink = styled(NavLink)`
   padding: ${(props) => (props.mobile ? ".5rem 1rem" : "1rem")};
   margin: ${(props) => (props.mobile ? "2rem 0" : "0 1rem")};
   font-weight: 400;
-  color: var(--color-white);
+  color: var(--color-text-light);
   transform: all 0.2s;
 
   &:hover {

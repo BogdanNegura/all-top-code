@@ -1,15 +1,23 @@
 import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
+  :root {
+    --bg-navigation: #b9e3c6;
+    --color-bg: #f0f0f0;
+    --color-text-light: #3f3f37;
+    --color-primary: #ef5350;
+    --color-secondary: #0c969b;
+    --color-header-bg: rgba(255, 255, 255, 0.9);
+    --color-neon-fill: #ef5350;
+    --color-neon-glow: none;
+  }
     *,
     *::before,
     *::after {
             margin: 0;
             padding: 0;
             box-sizing: inherit;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            -webkit-tap-highlight-color: transparent;
+      
     };
 
     *,
@@ -64,10 +72,10 @@ export default createGlobalStyle`
       --white: #fff;
       --shadow-btn: rgba(7, 49, 69, .1);
       --shadow-color: rgba(0, 0, 0, 0.1);
-      background-color: var(--background);
+      /* background-color: var(--background); */
 
       &.light-mode {
-      --navbar: rgba(255, 255, 255, 0.95);
+      --bg-navigation: #373f3b;
       --text: ${(props) => props.theme.colors.lightTheme.text};
       --text-highlight: ${(props) =>
         props.theme.colors.lightTheme.textHighlight};
@@ -75,7 +83,7 @@ export default createGlobalStyle`
       }
       
       &.dark-mode {
-        --navbar: rgba(33, 33, 33, 0.95);
+        --bg-navigation: #b9e3c6;
         --text: ${(props) => props.theme.colors.darkTheme.text};
         --text-highlight: ${(props) =>
           props.theme.colors.darkTheme.textHighlight};

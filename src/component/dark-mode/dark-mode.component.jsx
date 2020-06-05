@@ -9,7 +9,7 @@ import {
 
 const DarkMode = () => {
   const darkMode = useDarkMode(false);
-
+  //Animation
   const darkModeToggleSpring = useSpring({
     delay: 200,
     opacity: 1,
