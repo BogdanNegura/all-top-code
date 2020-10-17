@@ -1,5 +1,5 @@
 import React from 'react'
-import LocationOnIcon from '@material-ui/icons/LocationOn';
+// import LocationOnIcon from '@material-ui/icons/LocationOn';
 
 const Footer = () => {
     return (

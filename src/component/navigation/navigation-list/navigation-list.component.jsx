@@ -1,7 +1,7 @@
 import React from "react";
 import { NavigationItem } from "../navigation-item";
-import { AiFillHome } from "react-icons/ai";
-import { FiUser } from "react-icons/fi";
+import HomeIcon from '@material-ui/icons/Home';
+import PersonIcon from '@material-ui/icons/Person';
 
 import { StyledNavigationListUl } from "./navigation-list.style";
 
@@ -10,7 +10,7 @@ const NavigationList = ({ mobile, clicked }) => {
     <div>
       <StyledNavigationListUl>
         <NavigationItem link="/" mobile={mobile} clicked={clicked}>
-          <AiFillHome size="1.8rem" color="blue" />
+          <HomeIcon/>
         </NavigationItem>
         <NavigationItem link="/story" mobile={mobile} clicked={clicked}>
           Story
@@ -19,7 +19,8 @@ const NavigationList = ({ mobile, clicked }) => {
           CV
         </NavigationItem>
         <NavigationItem link="/sign-in" mobile={mobile} clicked={clicked}>
-          <FiUser />
+          <PersonIcon/>
+          
         </NavigationItem>
       </StyledNavigationListUl>
     </div>
