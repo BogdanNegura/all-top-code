@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 export const StyledMainNavigationWrapper = styled.div`
   /* position: fixed; */
-  background-color: var(--bg-navigation);
+  /* background-color: var(--bg-navigation); */
+  background-color: black;
+  
   /* background-image: linear-gradient(
     -225deg,
     #3d4e81 0%,

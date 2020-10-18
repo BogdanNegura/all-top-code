@@ -58,7 +58,8 @@ export default createGlobalStyle`
         line-height: 1.6; */
         font-family: 'Montserrat', 'sans-serif', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", '!default';
       margin: 0;
-      background-color: #243949;
+      /* background-color: #243949; */
+      background-color: #000000
       padding: 50px 30px;
       width: 100%;
       height: 100%;
