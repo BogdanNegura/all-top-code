@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledLayoutWrapper = styled.div`
-  padding: 50px;
+  /* padding: 50px; */
   border: 2px solid red;
   background-color: gray;
 `;
