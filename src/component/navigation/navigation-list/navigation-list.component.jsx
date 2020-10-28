@@ -18,6 +18,9 @@ const NavigationList = ({ mobile, clicked }) => {
         <NavigationItem link="/cv" mobile={mobile} clicked={clicked}>
           CV
         </NavigationItem>
+        <NavigationItem link="/css-tricks" mobile={mobile} clicked={clicked}>
+          CSS
+        </NavigationItem>
         <NavigationItem link="/sign-in" mobile={mobile} clicked={clicked}>
           <PersonIcon/>
           

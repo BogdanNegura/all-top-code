@@ -1,0 +1,1 @@
+export { CssTricks } from "./css-tricks.component"

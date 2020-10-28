@@ -7,6 +7,7 @@ import { Story } from "../container/story";
 import { Cv } from "../container/cv";
 import { SignIn } from "../container/sign-in";
 import { Footer } from "../footer";
+import { CssTricks } from "../container/css-tricks";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route exact path="/" component={Home} />
           <Route exact path="/story" component={Story} />
           <Route exact path="/cv" component={Cv} />
+          <Route exact path="/css-tricks" component={CssTricks} />
           <Route exact path="/sign-in" component={SignIn} />
           <Redirect to="/" />
         </Switch>

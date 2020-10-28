@@ -18,6 +18,7 @@ export const StyledNavigationLink = styled(NavLink)`
   font-weight: 400;
   /* color: var(--color-text-light); */
   color:  gray;
+  
   transform: all 0.2s;
 
 
