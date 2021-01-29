@@ -4,8 +4,10 @@ import {
   StyledNavigationWrapper,
   StyledContainer,
   StyledMainNavigationWrapper,
+  StyledNavigationLeftSide,
 } from "./navigation.style";
 import { Logo } from "../logo";
+import SearchIcon from '@material-ui/icons/Search';
 // import { DarkMode } from "../dark-mode/dark-mode.component";
 
 const Navigation = () => {
@@ -13,9 +15,14 @@ const Navigation = () => {
     <StyledMainNavigationWrapper>
       <StyledContainer>
         <StyledNavigationWrapper>
-          <Logo />
+          <StyledNavigationLeftSide>
+            <Logo />
+            <div className="nav__searchBar">
+              <SearchIcon className="search__icon"/>
+              <input type="text" placeholder="Search"/>
+            </div>
+          </StyledNavigationLeftSide>
           <NavigationList />
-          {/* <DarkMode /> */}
         </StyledNavigationWrapper>
       </StyledContainer>
     </StyledMainNavigationWrapper>

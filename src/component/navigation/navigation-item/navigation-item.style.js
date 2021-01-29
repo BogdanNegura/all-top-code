@@ -3,33 +3,35 @@ import { NavLink } from "react-router-dom";
 
 export const StyledLi = styled.li`
   display: flex;
-  /* height: 100%; */
 `;
 
 export const StyledNavigationLink = styled(NavLink)`
   display: flex;
+  flex-direction: column;
   text-transform: uppercase;
   align-items: center;
-  /* border-bottom: ${(props) =>
-    props.mobile ? "1px solid transparent" : "2px solid transparent"}; */
-  font-size: 1.2rem;
+  border-bottom: ${(props) =>
+    props.mobile ? "1px solid transparent" : "2px solid transparent"};
+  font-size: 1.3rem;
   padding: ${(props) => (props.mobile ? ".5rem 1rem" : "1rem")};
   margin: ${(props) => (props.mobile ? "2rem 0" : "0 1rem")};
   font-weight: 400;
-  /* color: var(--color-text-light); */
-  color:  gray;
-  
-  transform: all 0.2s;
+  /* background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%); */
+  color: #11AAA6;
 
+;
+  transform: all 0.2s;
+  
+  & > .styled__navIcons {
+    font-size: 20px;
+  }
 
   &:hover {
-    /* border-bottom: ${(props) =>
-      props.mobile
-        ? "1px solid var(--color-white)"
-        : "2px solid var(--color-white)"}; */
-        color: red;
-        border: 1px solid #38f9d7;
-        background-color: white;
+    color: white
+;
+    background-color: #FF9700;
+    /* background-color: whitesmoke; */
+    border-radius: 10px;
 
   }
 

@@ -5,4 +5,9 @@ export const StyledLogoWrapper = styled.div`
   color: var(--color-white);
   font-weight: 400;
   line-height: 50px;
+
+  & > img {
+    height: 80px;
+    width: 80px;
+  }
 `;

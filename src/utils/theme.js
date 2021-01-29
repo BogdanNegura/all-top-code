@@ -3,6 +3,10 @@ const theme = {
     // main: "#127EB1",
     // light: "#089ECA",
     // lighter: "#36A6BA",
+    // #11AAA6
+    // #FF9700
+    // #FF5B00
+    // #20D397
     lightTheme: {
       navigationBg: "#b9e3c6",
       text: "#3f3f37",
